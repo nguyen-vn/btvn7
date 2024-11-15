@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: #f57224;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+
+.menu .level-1 {
+    display: flex;
+}
+
+.menu .level-1 > li {
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu .level-1 > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu .level-1 > li > a i {
+    margin-right: 8px;
+}
+
+.menu .level-1 > li:hover {
+    background-color: #e05e1a;
+}
+
+
+.menu .level-2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    padding: 10px 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.menu .level-1 > li:hover .level-2 {
+    display: block;
+}
+
+.menu .level-2 > li {
+    padding: 10px 20px;
+    color: #333;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu .level-2 > li > a {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu .level-2 > li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Level 3 dropdown styling */
+.menu .level-3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: white;
+    padding: 10px 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.menu .level-2 > li:hover .level-3 {
+    display: block;
+}
+
+.menu .level-3 > li {
+    padding: 10px 20px;
+    color: #333;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu .level-3 > li > a {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu .level-3 > li:hover {
+    background-color: #f0f0f0;
+}
+.top-banner {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.navbar input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.navbar button {
+    padding: 8px 12px;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Carousel Banner Styling */
+.carousel .banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
